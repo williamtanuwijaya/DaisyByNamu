@@ -1,23 +1,46 @@
 * {
-  font-family: "Fredoka", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.landingpage {
+body {
   background-color: #4f6159;
-  min-height: 100vh;
+  font-family: "Fredoka", sans-serif;
+  min-height: 2000vh;
 }
-.landingpage header .navbar {
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(#4f6159);
+  padding: 1rem;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  z-index: 1000;
+}
+.navbar .navbar-brand {
   color: white;
-  justify-content: space-around;
+  font-size: 1.8rem;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+.navbar .navbar-links {
   list-style-type: none;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 2rem;
-  padding: 1rem 4rem;
-  font-size: 2.2rem;
-  cursor: pointer;
-  font-weight: 200;
+  display: flex;
+  gap: 2rem;
+  margin-right: 1rem;
+}
+.navbar .navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+.navbar .navbar-links li a:hover {
+  color: lightgray;
 }/*# sourceMappingURL=main.css.map */
