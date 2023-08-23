@@ -3,12 +3,150 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Daisy By Namu</title>
+    <link rel="icon" href="./assets/Daisy Logo-01.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet" />
+
+    <!-- Feathe Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <a href="https://api.whatsapp.com/send/?phone=6287830398899&text&type=phone_number&app_absent=0" class="float" target="_blank">
       <i class="fa fa-whatsapp my-float"></i>
-    </a>
+    </a> -->
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Daisy<span>ByNamu</span></a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <!-- <a href="#" id="search"> <i data-feather="search"></i> </a>
+        <a href="#" id="shopping-cart"> <i data-feather="shopping-cart"></i> </a> -->
+        <a href="#" id="hamburger-menu"> <i data-feather="menu"></i> </a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Hero Section Start-->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Mau buat <span>Hampers?</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, minus.</p>
+        <a href="https://wa.me/6287830398899?text=Hai%20kak%2C%20saya%20mau%20order%20hampers" target="_blank" class="cta">Beli Sekarang</a>
+      </main>
+    </section>
+    <!-- Hero Section End-->
+
+    <!-- About Section Start -->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Kami</h2>
+      <div class="row">
+        <div class="about-img">
+          <img src="./assets/Daisy Logo-01.png" alt="Tentang Kami" />
+        </div>
+        <div class="content">
+          <h3>Lorem ipsum dolor sit amet.</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt mollitia accusamus est maxime porro doloremque?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vel odio molestias libero quidem harum laudantium deleniti quaerat fugit a.</p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Menu Section Start -->
+    <section id="menu" class="menu">
+      <h2><span>Menu</span> Kami</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non accusantium mollitia, rem velit.</p>
+      <div class="row">
+        <div class="menu-card">
+          <img src="./assets/item/giga.jpg" alt="Giga" class="menu-card-img" />
+          <h3 class="menu-card-title">- Espresso -</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="menu-card">
+          <img src="./assets/item/giga.jpg" alt="Giga" class="menu-card-img" />
+          <h3 class="menu-card-title">- Espresso -</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="menu-card">
+          <img src="./assets/item/giga.jpg" alt="Giga" class="menu-card-img" />
+          <h3 class="menu-card-title">- Espresso -</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="menu-card">
+          <img src="./assets/item/giga.jpg" alt="Giga" class="menu-card-img" />
+          <h3 class="menu-card-title">- Espresso -</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+      </div>
+    </section>
+    <!-- Menu Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="contact">
+      <h2><span>Kontak</span> Kami</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, minima.</p>
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127504.42549601124!2d104.76296454999999!3d-2.9549685499999963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b75e8fc27a3e3%3A0x3039d80b220d0c0!2sPalembang%2C%20Palembang%20City%2C%20South%20Sumatra!5e0!3m2!1sen!2sid!4v1690964116484!5m2!1sen!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        >
+        </iframe>
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="nama" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="email" placeholder="email" />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="no hp" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer start -->
+    <footer>
+      
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p><a href="">DaisyByNamu</a>. | &copy; 2023.</p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
