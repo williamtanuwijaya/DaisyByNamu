@@ -240,45 +240,6 @@ html{
   background-color: #222;
 }
 
-.contact .row .map{
-  flex: 1 1 45rem;
-  width: 100%;
-  object-fit: cover;
-}
-
-.contact .row form{
-  flex: 1 1 45rem;
-  padding: 5rem 2rem;
-  text-align: center;
-}
-
-.contact .row form .input-group{
-  display: flex;
-  align-items: center;
-  margin-top: 2rem;
-  background-color: var(--bg);
-  border: 1px solid #eee;
-  padding-left: 2rem;
-}
-
-.contact .row form .input-group input{
-  width: 100%;
-  padding: 2rem;
-  font-size: 1.7rem;
-  background: none;
-  color: #fff;
-}
-
-.contact .row form .btn{
-  margin-top: 3rem;
-  display: inline-block;
-  padding: 1rem 3rem;
-  font-size: 1.7rem;
-  color: #fff;
-  background-color: var(--primary);
-  cursor: pointer;
-}
-
 /* Footer */
 footer{
   background-color: var(--primary);
@@ -287,16 +248,7 @@ footer{
   margin-top: 3rem;
 }
 
-footer .social{
-  padding: 1rem 0;
-}
 
-footer .social a{
-  color: #fff;
-  margin: 1rem;
-}
-
-footer .social a:hover,
 footer .links a:hover{
   color: var(--bg);
 }
@@ -389,7 +341,7 @@ footer .credit a {
   .menu p{
     font-size: 1.2rem;
   }
-
+/* 
   .contact .row{
     flex-wrap: wrap;
   }
@@ -400,7 +352,7 @@ footer .credit a {
 
   .contact .row form{
     padding-top: 0;
-  }
+  } */
 }
 
 /* Mobile Phone */
