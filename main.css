@@ -7,7 +7,7 @@
 body {
   background-color: #4f6159;
   font-family: "Fredoka", sans-serif;
-  min-height: 2000vh;
+  /* min-height: 2000vh; */
 }
 
 .navbar {
