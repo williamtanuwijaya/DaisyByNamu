@@ -65,3 +65,40 @@ window.onclick = (e) => {
     itemDetailModal.style.display = 'none';
   }
 };
+
+function handleSubmit(event) {
+  event.preventDefault();
+
+  let nama = document.querySelector('input[placeholder="nama"]').value;
+  let email = document.querySelector('input[placeholder="email"]').value;
+  let noHp = document.querySelector('input[placeholder="no hp"]').value;
+  let pesan = document.querySelector('input[placeholder="pesan"]').value;
+
+  // Kirim data ke email.js menggunakan XMLHttpRequest
+  let xhr = new XMLHttpRequest();
+  xhr.open('POST', 'https://api.emailjs.com/api/v1.0/email/send');
+  xhr.setRequestHeader('Content-Type', 'application/json');
+
+  // Ganti dengan konfigurasi email.js yang sesuai
+  let data = {
+    service_id: 'YOUR_SERVICE_ID',
+    template_id: 'YOUR_TEMPLATE_ID',
+    user_id: 'YOUR_USER_ID',
+    template_params: {
+      nama: nama,
+      email: email,
+      no_hp: noHp,
+      pesan: pesan,
+    },
+  };
+
+  xhr.send(JSON.stringify(data));
+
+  // Setelah data terkirim, kosongkan nilai input
+  document.querySelector('input[placeholder="nama"]').value = '';
+  document.querySelector('input[placeholder="email"]').value = '';
+  document.querySelector('input[placeholder="no hp"]').value = '';
+  document.querySelector('input[placeholder="pesan"]').value = '';
+
+  // Tambahkan logika atau kode lainnya sesuai kebutuhan
+}
