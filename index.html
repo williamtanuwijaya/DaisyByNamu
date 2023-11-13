@@ -1,283 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daisy By Namu</title>
-    <link rel="icon" href="./assets/Daisy Logo-01.png" />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daisy By Namu</title>
+  <link rel="icon" href="./assets/Daisy Logo-01.png" />
 
-    <!-- Feathe Icons -->
-    <script src="https://unpkg.com/feather-icons"></script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+    rel="stylesheet" />
 
-    <!-- My Style -->
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-    <a href="https://api.whatsapp.com/send/?phone=6287830398899&text&type=phone_number&app_absent=0" class="float" target="_blank">
-      <i class="fa fa-whatsapp my-float"></i>
-    </a> -->
-    <!-- Navbar start -->
-    <nav class="navbar">
-      <a href="#" class="navbar-logo">Daisy<span>ByNamu</span></a>
+  <!-- Feathe Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
 
-      <div class="navbar-nav">
-        <a href="#home">Home</a>
-        <a href="#about">Tentang Kami</a>
-        <a href="#menu">Menu</a>
-        <a href="#products">Produk</a>
-        <a href="#contact">Kontak</a>
+  <!-- My Style -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/floating_button.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="floating-container">
+    <div class="floating-button">+</div>
+    <div class="element-container">
+
+      <div class="datafeather">
+        <a href="https://www.instagram.com/daisybynamu/" target="_blank">
+          <span class="float-element tooltip-left">
+            <i data-feather="instagram" style="padding-top: 10px;"></i>
+          </span>
+        </a>
       </div>
-
-      <div class="navbar-extra">
-        <a href="#" id="search-button"> <i data-feather="search"></i> </a>
-        <a href="#" id="shopping-cart-button"> <i data-feather="shopping-cart"></i> </a>
-        <a href="#" id="hamburger-menu"> <i data-feather="menu"></i> </a>
+      <div class="datafeather">
+        <a href="https://www.tokopedia.com/giftbynamu" target="_blank">
+          <span class="float-element">
+            <i data-feather="shopping-bag" style="padding-top: 10px;">
+            </i>
+          </span>
+        </a>
       </div>
-      <!--Search Form Start-->
-      <div class="search-form">
-        <input type="search" name="search" id="search-box" placeholder="search here..." />
-        <label for="search-box">
-          <i data-feather="search"></i>
-        </label>
+      <a href="https://api.whatsapp.com/send/?phone=6287830398899&text&type=phone_number&app_absent=0" target="_blank">
+        <span class="float-element">
+          <i class="material-icons">chat</i>
+        </span>
+      </a>
+    </div>
+  </div>
+  <!-- Navbar start -->
+  <nav class="navbar">
+    <a href="#" class="navbar-logo">Daisy<span>ByNamu</span></a>
+
+    <div class="navbar-nav">
+      <a href="#home">Home</a>
+      <a href="#about">Tentang Kami</a>
+      <a href="#produk">Produk</a>
+      <a href="#contact">Kontak</a>
+    </div>
+
+    <div class="navbar-extra">
+      <a href="#" id="hamburger-menu"> <i data-feather="menu"></i> </a>
+    </div>
+  </nav>
+  <!-- Navbar end -->
+
+  <!-- Hero Section Start-->
+  <section class="hero" id="home">
+    <main class="content">
+      <h1>Mau buat <span>Hampers?</span></h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, minus.</p>
+      <a href="#produk" class="cta">Pesan Sekarang</a>
+    </main>
+  </section>
+  <!-- Hero Section End-->
+
+  <!-- About Section Start -->
+  <section id="about" class="about">
+    <h2><span>Tentang</span> Kami</h2>
+    <div class="row">
+      <div class="about-img">
+        <img src="./assets/Daisy Logo-01.png" alt="Tentang Kami" />
       </div>
-      <!--Search Form End-->
-
-      <!-- Shopping Card Start-->
-      <div class="shopping-cart">
-        <div class="card-item">
-          <img src="./assets/item/1.jpg" alt="Product1">
-          <div class="item-detail">
-            <h3>Product 1</h3>
-            <div class="item-price">IDR 30K</div>
-          </div>
-          <i data-feather="trash-2" class="remove-item"></i>
-        </div>
-        <div class="card-item">
-          <img src="./assets/item/1.jpg" alt="Product1">
-          <div class="item-detail">
-            <h3>Product 1</h3>
-            <div class="item-price">IDR 30K</div>
-          </div>
-          <i data-feather="trash-2" class="remove-item"></i>
-        </div>
-        <div class="card-item">
-          <img src="./assets/item/1.jpg" alt="Product1">
-          <div class="item-detail">
-            <h3>Product 1</h3>
-            <div class="item-price">IDR 30K</div>
-          </div>
-          <i data-feather="trash-2" class="remove-item"></i>
-        </div>
-      </div>
-      <!-- Shopping Card End-->
-    </nav>
-    <!-- Navbar end -->
-
-    <!-- Hero Section Start-->
-    <section class="hero" id="home">
-      <main class="content">
-        <h1>Mau buat <span>Hampers?</span></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, minus.</p>
-        <!-- <a href="https://wa.me/6287830398899?text=Hai%20kak%2C%20saya%20mau%20order%20hampers" target="_blank" class="cta">Beli Sekarang</a> -->
-        <a href="#menu" class="cta">Beli Sekarang</a>
-      </main>
-    </section>
-    <!-- Hero Section End-->
-
-    <!-- About Section Start -->
-    <section id="about" class="about">
-      <h2><span>Tentang</span> Kami</h2>
-      <div class="row">
-        <div class="about-img">
-          <img src="./assets/Daisy Logo-01.png" alt="Tentang Kami" />
-        </div>
-        <div class="content">
-          <h3>Lorem ipsum dolor sit amet.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt mollitia accusamus est maxime porro doloremque?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vel odio molestias libero quidem harum laudantium deleniti quaerat fugit a.</p>
-        </div>
-      </div>
-    </section>
-    <!-- About Section End -->
-
-    <!-- Menu Section Start -->
-    <section id="menu" class="menu">
-      <h2><span>Menu</span> Kami</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non accusantium mollitia, rem velit.</p>
-      <div class="row">
-        <div class="menu-card">
-          <img src="./assets/item/giga.jpg" alt="Giga" class="menu-card-img" />
-          <h3 class="menu-card-title">- Size Giga -</h3>
-          <p class="menu-card-price">IDR 15K</p>
-        </div>
-        <div class="menu-card">
-          <img src="./assets/item/giga.jpg" alt="Giga" class="menu-card-img" />
-          <h3 class="menu-card-title">- Size Jumbo -</h3>
-          <p class="menu-card-price">IDR 15K</p>
-        </div>
-        <div class="menu-card">
-          <img src="./assets/item/giga.jpg" alt="Giga" class="menu-card-img" />
-          <h3 class="menu-card-title">- Size Mini -</h3>
-          <p class="menu-card-price">IDR 15K</p>
-        </div>
-        <div class="menu-card">
-          <img src="./assets/item/giga.jpg" alt="Giga" class="menu-card-img" />
-          <h3 class="menu-card-title">- Size Petite -</h3>
-          <p class="menu-card-price">IDR 15K</p>
-        </div>
-      </div>
-    </section>
-    <!-- Menu Section End -->
-
-    <!-- Products Section Start -->
-    <section class="products" id="products">
-      <h2><span>Produk Unggulan</span> Kami</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime voluptatem, voluptatum ipsam atque voluptates id.</p>
-      <div class="row">
-        <div class="product-card">
-          <div class="product-icons">
-            <a href="#"><i data-feather="shopping-cart"></i></a>
-            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
-          </div>
-          <div class="product-image">
-            <!-- UNTUK UKURAN GAMBAR 800px X 800px -->
-            <img src="./assets/item/1.jpg" alt="Product1" />
-          </div>
-          <div class="product-content">
-            <h3>Coffee Beans 1</h3>
-            <div class="product-stars">
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-              <i data-feather="star" class="star-full"></i>
-            </div>
-            <div class="product-price">IDR 30K <span>IDR 55K</span></div>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-icons">
-            <a href="#"><i data-feather="shopping-cart"></i></a>
-            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
-          </div>
-          <div class="product-image">
-            <!-- UNTUK UKURAN GAMBAR 800px X 800px -->
-            <img src="./assets/item/1.jpg" alt="Product1" />
-          </div>
-          <div class="product-content">
-            <h3>Coffee Beans 1</h3>
-            <div class="product-stars">
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-            </div>
-            <div class="product-price">IDR 30K <span>IDR 55K</span></div>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-icons">
-            <a href="#"><i data-feather="shopping-cart"></i></a>
-            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
-          </div>
-          <div class="product-image">
-            <!-- UNTUK UKURAN GAMBAR 800px X 800px -->
-            <img src="./assets/item/1.jpg" alt="Product1" />
-          </div>
-          <div class="product-content">
-            <h3>Coffee Beans 1</h3>
-            <div class="product-stars">
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-            </div>
-            <div class="product-price">IDR 30K <span>IDR 55K</span></div>
-          </div>
-        </div>
-        <div class="product-card">
-          <div class="product-icons">
-            <a href="#"><i data-feather="shopping-cart"></i></a>
-            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
-          </div>
-          <div class="product-image">
-            <!-- UNTUK UKURAN GAMBAR 800px X 800px -->
-            <img src="./assets/item/1.jpg" alt="Product1" />
-          </div>
-          <div class="product-content">
-            <h3>Coffee Beans 1</h3>
-            <div class="product-stars">
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-            </div>
-            <div class="product-price">IDR 30K <span>IDR 55K</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Products Section End -->
-
-    <!-- Contact Section Start -->
-    <section id="contact" class="contact">
-      <h2><span>Kontak</span> Kami</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, minima.</p>
-    </section>
-    <!-- Contact Section End -->
-
-    <!-- Footer start -->
-    <footer>
-      <div class="links">
-        <a href="#home">Home</a>
-        <a href="#about">Tentang Kami</a>
-        <a href="#menu">Menu</a>
-        <a href="#contact">Kontak</a>
-      </div>
-
-      <div class="credit">
-        <p><a href="">DaisyByNamu</a>. | &copy; 2023.</p>
-      </div>
-    </footer>
-    <!-- Footer end -->
-
-    <!-- Modal Box Item Detail start -->
-    <div class="modal" id="item-detail-modal">
-      <div class="modal-container">
-        <a href="#" class="close-icon"><i data-feather="x"></i></a>
-        <div class="modal-content">
-          <img src="./assets/item/1.jpg" alt="Product1">
-          <div class="product-content">
-            <h3>Product 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi hic pariatur incidunt magni, sapiente asperiores quam sit quisquam id blanditiis? In autem commodi magni vitae.</p>
-            <div class="product-stars">
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-              <i data-feather="star"></i>
-            </div>
-            <div class="product-price">IDR 30K <span>IDR 55K</span></div>
-            <a href="#"><i data-feather="shopping-cart"></i><span>add to cart</span></a>
-          </div>
-        </div>
+      <div class="content">
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt mollitia accusamus est maxime porro
+          doloremque?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vel odio molestias libero quidem harum
+          laudantium deleniti quaerat fugit a.</p>
       </div>
     </div>
-    <!-- Modal Box Item Detail end -->
-    <!-- Feather Icons -->
-    <script>
-      feather.replace();
-    </script>
-    <script src="./js/script.js"></script>
-  </body>
+  </section>
+  <!-- About Section End -->
+
+  <!-- Menu Section Start -->
+  <section id="produk" class="menu">
+    <h2><span>Produk</span> Kami</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non accusantium mollitia, rem velit.</p>
+    <div class="row">
+      <div class="menu-card">
+        <img src="./assets/item/giga.jpg" alt="Giga" class="menu-card-img" />
+        <h3 class="menu-card-title">- Size Giga -</h3>
+      </div>
+      <div class="menu-card">
+        <img src="./assets/item/giga.jpg" alt="Giga" class="menu-card-img" />
+        <h3 class="menu-card-title">- Size Jumbo -</h3>
+      </div>
+      <div class="menu-card">
+        <img src="./assets/item/giga.jpg" alt="Giga" class="menu-card-img" />
+        <h3 class="menu-card-title">- Size Mini -</h3>
+      </div>
+      <div class="menu-card">
+        <img src="./assets/item/giga.jpg" alt="Giga" class="menu-card-img" />
+        <h3 class="menu-card-title">- Size Petite -</h3>
+      </div>
+    </div>
+  </section>
+  <!-- Menu Section End -->
+
+  <!-- Contact Section Start -->
+  <section id="contact" class="contact">
+    <h2><span>Kontak</span> Kami</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, minima.</p>
+    <div class="row">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126920.28228585725!2d106.74711690307481!3d-6.22956945285261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2sJakarta!5e0!3m2!1sen!2sid!4v1699797615179!5m2!1sen!2sid"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+      <form onsubmit="handleSubmit(event)">
+        <div class="input-group">
+          <i data-feather="user"></i>
+          <input type="text" placeholder="nama" required />
+        </div>
+        <div class="input-group">
+          <i data-feather="mail"></i>
+          <input type="email" placeholder="email" required />
+        </div>
+        <div class="input-group">
+          <i data-feather="phone"></i>
+          <input type="text" placeholder="no hp" required />
+        </div>
+        <div class="input-group">
+          <i data-feather="message-square"></i>
+          <input type="text" placeholder="pesan" required />
+        </div>
+        <div class="input-group-submit">
+          <input type="submit" value="SUBMIT" />
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- Contact Section End -->
+
+  <!-- Footer start -->
+  <footer>
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#about">Tentang Kami</a>
+      <a href="#produk">Produk</a>
+      <a href="#contact">Kontak</a>
+    </div>
+
+    <div class="credit">
+      <p><a href="">DaisyByNamu</a>. | &copy; 2023.</p>
+    </div>
+  </footer>
+  <!-- Footer end -->
+  <!-- Feather Icons -->
+  <script>
+    feather.replace();
+  </script>
+  <script src="./js/script.js"></script>
+</body>
 
 </html>
