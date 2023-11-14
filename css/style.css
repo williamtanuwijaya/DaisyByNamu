@@ -251,7 +251,7 @@ html {
   padding: 5rem 2rem;
   text-align: center;
 }
-.input-group-submit input[type="submit"]{
+.input-group-submit input[type='submit'] {
   /* display: flex; */
   align-items: center;
   margin-top: 2rem;
@@ -276,7 +276,7 @@ html {
   padding-left: 2rem;
 }
 
-.contact .row form .input-group input{
+.contact .row form .input-group input {
   width: 100%;
   padding: 2rem;
   font-size: 1.7rem;
