@@ -251,7 +251,7 @@ html {
   padding: 5rem 2rem;
   text-align: center;
 }
-.input-group-submit input[type="submit"]{
+.input-group-submit input[type='submit'] {
   /* display: flex; */
   align-items: center;
   margin-top: 2rem;
@@ -276,7 +276,7 @@ html {
   padding-left: 2rem;
 }
 
-.contact .row form .input-group input{
+.contact .row form .input-group input {
   width: 100%;
   padding: 2rem;
   font-size: 1.7rem;
@@ -300,6 +300,7 @@ footer {
   text-align: center;
   padding: 1rem 0 3rem;
   margin-top: 3rem;
+  font-size: 1.2rem;
 }
 
 footer .social {
@@ -326,7 +327,7 @@ footer .links a {
 }
 
 footer .credit {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
 }
 
 footer .credit a {
