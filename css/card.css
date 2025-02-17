@@ -1,0 +1,75 @@
+/* Style untuk row */
+.rowcard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Membuat card memiliki jarak yang merata */
+    gap: 20px; /* Jarak antara card */
+    padding: 20px; /* Padding untuk row */
+  }
+  
+  /* Style untuk card */
+  .card {
+    flex: 1 1 18rem; /* Flex-grow, flex-shrink, dan flex-basis */
+    max-width: 18rem; /* Lebar maksimum card */
+    border: 1px solid #ddd; /* Border card */
+    border-radius: 8px; /* Border radius card */
+    overflow: hidden; /* Memastikan gambar tidak keluar dari card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow untuk card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animasi hover */
+  }
+  
+  /* Hover effect untuk card */
+  .card:hover {
+    transform: translateY(-5px); /* Mengangkat card sedikit saat hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow lebih besar saat hover */
+  }
+  
+  /* Style untuk gambar di dalam card */
+  .card-img-top {
+    width: 100%; /* Gambar mengisi lebar card */
+    height: auto; /* Tinggi gambar menyesuaikan */
+  }
+  
+  /* Style untuk body card */
+  .card-body {
+    padding: 15px; /* Padding untuk body card */
+  }
+  
+  /* Style untuk judul card */
+  .card-title {
+    font-size: 1.25rem; /* Ukuran font judul */
+    margin-bottom: 10px; /* Jarak bawah judul */
+  }
+  
+  /* Style untuk teks card */
+  .card-text {
+    font-size: 0.875rem; /* Ukuran font teks */
+    color: #555; /* Warna teks */
+    margin-bottom: 15px; /* Jarak bawah teks */
+  }
+  
+  /* Style untuk tombol di dalam card */
+  .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 0.875rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect untuk tombol */
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media query untuk responsivitas */
+  @media (max-width: 768px) {
+    .card {
+      flex: 1 1 100%; /* Card mengambil lebar penuh pada layar kecil */
+      max-width: 100%;
+    }
+  }
