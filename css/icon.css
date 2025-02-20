@@ -26,3 +26,40 @@
     opacity: 0.8;
   }
   
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #738f7f;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #90ad9d;
+}
+
+#icon{
+  display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #738f7f;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#icon:hover{
+  background-color: #90ad9d;
+}

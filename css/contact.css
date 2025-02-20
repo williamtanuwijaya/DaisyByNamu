@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+.section {
+    flex: 1;
+    min-width: 300px;
+    padding: 10px;
+}
+.contact-box {
+    border: 2px solid #2F4F4F;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+.contact-box img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+.social-icons a {
+    text-decoration: none;
+    font-size: 24px;
+}
+iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.4rem;
+    }
+}

@@ -25,12 +25,15 @@
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/card.css">
   <link rel="stylesheet" href="./css/icon.css">
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="./css/gallery.css">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
@@ -44,6 +47,7 @@
       <a href="#giftbynamu">GiftByNamu</a>
       <a href="#daisybynamu">DaisyByNamu</a>
       <a href="#willowbynamu">WillowByNamu</a>
+      <a href="#gallery">Gallery</a>
       <a href="#contact">Contact Us</a>
     </div>
 
@@ -66,7 +70,8 @@
   <!-- Card Section Start -->
   <section id="about" class="about">
     <h2><span>Tentang</span> Kami</h2>
-    <p style="text-align: center;">Adding wording “By Namu hadir dari tahun 2020 di Jakarta untuk memberikan pengalaman
+    <p style="text-align: center; max-width: 800px; margin: 0 auto; font-size: 1.2rem; line-height: 1.6;">Adding wording
+      “By Namu hadir dari tahun 2020 di Jakarta untuk memberikan pengalaman
       gifting yang berkesan
       dengan sentuhan personal dan desain yang unik dan dapat dikirimkan ke seluruh wilayah Indonesia. Di bawah
       naungan Namu Kreativa, kami memiliki tiga brand: Gift by Namu untuk seasonal hampers, corporate hampers,
@@ -118,7 +123,7 @@
           serta
           kemasan yang aesthetic, menjadikan setiap hadiah lebih berkesan.</p>
         <a class="icon" href="https://www.instagram.com/"><i class="fa-brands fa-whatsapp"></i></a>
-        <a class="icon" href="https://www.whatsapp.com/?lang=id"><i class="fa-brands fa-instagram"></i></a>
+        <a class="icon" href="https://www.instagram.com/giftbynamu/"><i class="fa-brands fa-instagram"></i></a>
       </div>
     </div>
   </section>
@@ -137,7 +142,7 @@
           souvenir tematik yang bisa disesuaikan dengan acara, Daisy by Namu adalah pilihan terbaik bagi
           para orang tua yang ingin memberikan kejutan berkesan.</p>
         <a class="icon" href="https://www.instagram.com/"><i class="fa-brands fa-whatsapp"></i></a>
-        <a class="icon" href="https://www.whatsapp.com/?lang=id"><i class="fa-brands fa-instagram"></i></a>
+        <a class="icon" href="https://www.instagram.com/daisybynamu"><i class="fa-brands fa-instagram"></i></a>
       </div>
       <div class="about-img">
         <img src="./assets/Daisy Logo-01.png" alt="Tentang Kami" />
@@ -162,11 +167,78 @@
           kantor, hingga kejutan spesial untuk orang tersayang. Dengan berbagai pilihan ukuran dan desain
           yang bisa disesuaikan, Willow by Namu menawarkan pengalaman gifting yang beda dari yang lain.</p>
         <a class="icon" href="https://www.instagram.com/"><i class="fa-brands fa-whatsapp"></i></a>
-        <a class="icon" href="https://www.whatsapp.com/?lang=id"><i class="fa-brands fa-instagram"></i></a>
+        <a class="icon" href="https://www.instagram.com/willowbynamu/"><i class="fa-brands fa-instagram"></i></a>
       </div>
     </div>
   </section>
   <!-- About Section End -->
+  <!-- Gallery Start -->
+  <section class="gallerynamu" style="text-align: center;" id="gallery">
+    <div style="text-align: center; font-size: 1.5rem; margin-bottom: 3rem;">
+      <h2>Gallery <span style="color: #738f7f;">Namu</span>Kreativa</h2>
+    </div>
+    <div class="buttons">
+      <button onclick="filterSelection('all')">Show All</button>
+      <button onclick="filterSelection('GiftByNamu')">GiftByNamu</button>
+      <button onclick="filterSelection('DaisyByNamu')">DaisyByNamu</button>
+      <button onclick="filterSelection('WillowByNamu')">WillowByNamu</button>
+    </div>
+    <div class="gallery">
+      <div class="gallery-item GiftByNamu show item"><img src="./assets/Daisy Logo-01.png" alt="GiftByNamu"></div>
+      <div class="gallery-item DaisyByNamu show item"><img src="./assets/Daisy Logo-02.png" alt="DaisyByNamu"></div>
+      <div class="gallery-item WillowByNamu show item"><img src="./assets/Daisy Logo-03.png" alt="WillowByNamu"></div>
+      <div class="gallery-item GiftByNamu show item"><img src="./assets/Daisy Logo-04.png" alt="GiftByNamu"></div>
+      <div class="gallery-item DaisyByNamu show item"><img src="./assets/Daisy Logo-01.png" alt="DaisyByNamu"></div>
+      <div class="gallery-item WillowByNamu show item"><img src="./assets/Daisy Logo-02.png" alt="WillowByNamu"></div>
+    </div>
+  </section>
+  <!-- Gallery End -->
+  <!-- Contact Section Start -->
+  <div class="container" id="contact" style="padding: 5rem;">
+    <div class="section">
+      <h2>Namu Kreativa</h2>
+      <p style="max-width: 300px;">Let's create something special together! Hubungi kami untuk pemesanan, pertanyaan, atau konsultasi lebih
+        lanjut.</p>
+      <h3 style="margin-top: 150px;">Ikuti Kami</h3>
+
+      <div>
+        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+
+    </div>
+    <div class="section" style="cursor: pointer;  user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none">
+      <h2>Kontak Kami</h2>
+      <div class="contact-box">
+        <i class="fa-solid fa-location-dot" id="icon"></i>
+        <span>&nbsp;Kembangan, Jakarta Barat</span>
+      </div>
+
+      <a href="https://api.whatsapp.com/send?phone=6282280000787" style="color: black">
+        <div class="contact-box">
+          <i class="fa-brands fa-whatsapp" id="icon"></i>
+          <span>&nbsp;Contact Admin: +62 822 80000 787 </span>
+        </div>
+      </a>
+
+      <div class="contact-box">
+        <i class="fa-solid fa-envelope" id="icon"></i>
+        <a href="mailto:namugifts@gmail.com" style="color: black; text-decoration: none;">&nbsp; namugifts@gmail.com</a>
+      </div>
+
+    </div>
+    <div class="section">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31732.38906775812!2d106.72070541376615!3d-6.191097487459726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f76dd848d7a9%3A0x525d684aed1f9b1d!2sKembangan%2C%20West%20Jakarta%20City%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1740056834728!5m2!1sen!2sid"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <!-- Contact Section End -->
 
   <!-- Footer start -->
   <footer>
@@ -176,6 +248,7 @@
       <a href="#giftbynamu">GiftByNamu</a>
       <a href="#daisybynamu">DaisyByNamu</a>
       <a href="#willowbynamu">WillowByNamu</a>
+      <a href="#gallery">Gallery</a>
       <a href="#contact">Contact Us</a>
     </div>
 
@@ -189,6 +262,19 @@
     feather.replace();
   </script>
   <script src="./js/script.js"></script>
+  <script>
+    function filterSelection(category) {
+      let items = document.querySelectorAll(".gallery-item");
+      items.forEach(item => {
+        item.classList.remove("show");
+        setTimeout(() => {
+          if (category === "all" || item.classList.contains(category)) {
+            item.classList.add("show");
+          }
+        }, 100);
+      });
+    }
+  </script>
 </body>
 
 </html>
