@@ -107,11 +107,11 @@ html {
   display: flex;
   align-items: center;
   /* background-image: url('../assets/freestocks-spP6LqxN0-g-unsplash.jpg'); */
-  background-image: url('../assets/page1/0B4E21C2-6145-4B60-AFF1-CDF8DB574A74.JPG');
+  /* background-image: url('../assets/page1/0B4E21C2-6145-4B60-AFF1-CDF8DB574A74.JPG'); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
-  /* background-color: #94c5c9; */
+  background-color: #97b9a6;
   position: relative;
 }
 
