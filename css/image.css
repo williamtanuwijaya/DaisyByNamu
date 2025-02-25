@@ -18,6 +18,8 @@
   transform: translateY(10px);
   opacity: 0; /* Awalnya transparan */
   animation: fadeIn 1.5s ease-in-out forwards; /* Efek fade */
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 /* Animasi fade */
