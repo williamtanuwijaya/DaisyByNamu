@@ -103,7 +103,8 @@ html {
 
 /* Hero Section */
 .hero {
-  min-height: 100vh;
+  margin-top: 10rem;
+  /* min-height: 100vh; */
   display: flex;
   align-items: center;
   /* background-image: url('../assets/freestocks-spP6LqxN0-g-unsplash.jpg'); */
@@ -113,9 +114,11 @@ html {
   background-position: right;
   background-color: #97b9a6;
   position: relative;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
 }
 
-.hero::after {
+/* .hero::after {
   content: '';
   display: block;
   position: absolute;
@@ -123,7 +126,7 @@ html {
   height: 30%;
   bottom: 0;
   background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 50%);
-}
+} */
 
 .hero .content {
   padding: 1.4rem 7%;
