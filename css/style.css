@@ -1,5 +1,5 @@
 :root {
-  --primary: #738f7f;
+  --primary: #536459;
   --bg: #ffffff;
 }
 
@@ -57,7 +57,7 @@ html {
   font-size: 2rem;
   font-weight: 700;
   color: #fff;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .navbar .navbar-logo span {
@@ -112,10 +112,8 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
-  background-color: #97b9a6;
+  background-color: #536459;
   position: relative;
-  border-top-right-radius: 100px;
-  border-bottom-right-radius: 100px;
 }
 
 /* .hero::after {
@@ -160,7 +158,7 @@ html {
   padding: 1rem 3rem;
   font-size: 1.4rem;
   color: #fff;
-  background-color: var(--primary);
+  background-color: #e99940;
   border-radius: 0.5rem;
   box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
