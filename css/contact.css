@@ -1,86 +1,97 @@
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .section {
-    flex: 1;
-    min-width: 300px;
-    padding: 10px;
+  flex: 1;
+  min-width: 300px;
+  padding: 10px;
 }
 
-.contact-box {
-    border: 2px solid #2F4F4F;
-    padding: 15px;
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-    border-radius: 8px;
+.contact-box,
+.contact-dropdown summary {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
-.contact-boxli {
-    border: 2px solid #2F4F4F;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.contact-box:hover,
+.contact-dropdown summary:hover {
+  background-color: #e9e9e9;
 }
 
-.contact-boxli i {
-    font-size: 24px;
-    color: #25D366;
+.contact-box i,
+.contact-dropdown summary i {
+  margin-right: 10px;
+  color: #555;
 }
 
-.contact-boxli ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.contact-box span,
+.contact-dropdown summary span {
+  color: #555;
 }
 
-.contact-boxli li {
-    display: flex;
-    gap: 10px;
+/* Dropdown Styles */
+.contact-dropdown {
+  position: relative;
 }
 
-.contact-boxli li::before {
-    content: "\2022";
-    /* Bullet point */
-    color: transparent;
-    font-weight: bold;
-    display: inline-block;
-    width: 1em;
+.contact-dropdown summary {
+  list-style: none; /* Menghilangkan tanda panah default */
+  cursor: pointer;
 }
 
-.contact-box img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
+.contact-dropdown summary::-webkit-details-marker {
+  display: none; /* Menghilangkan tanda panah di browser WebKit */
 }
 
-.social-icons {
-    display: flex;
-    gap: 10px;
+.contact-dropdown ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, opacity 0.3s ease-out;
+  opacity: 0;
 }
 
-.social-icons a {
-    text-decoration: none;
-    font-size: 24px;
+.contact-dropdown[open] ul {
+  max-height: 200px; /* Sesuaikan dengan tinggi konten */
+  opacity: 1;
 }
 
-iframe {
-    width: 100%;
-    height: 250px;
-    border: none;
+.contact-dropdown ul li {
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  margin-bottom: 5px;
 }
 
+.contact-dropdown ul li a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-dropdown ul li a:hover {
+  text-decoration: underline;
+}
+
+a.contact-box {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: center;
-        font-size: 1.4rem;
-    }
+  .contact-box,
+  .contact-dropdown summary {
+    padding: 8px;
+  }
 }
