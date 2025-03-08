@@ -16,45 +16,45 @@
 }
 
 .buttons .giftbynamu {
-    padding: 10px 20px;
-    margin: 5px;
-    border: none;
-    cursor: pointer;
-    background-color: #57585a;
-    color: white;
-    border-radius: 5px;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #58595b;
+  color: white;
+  border-radius: 5px;
 }
 
 .buttons .giftbynamu:hover {
-    background-color: #777879;
+  background-color: #696a6d;
 }
 
 .buttons .daisybynamu {
-    padding: 10px 20px;
-    margin: 5px;
-    border: none;
-    cursor: pointer;
-    background-color: #738f7f;
-    color: white;
-    border-radius: 5px;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #536459;
+  color: white;
+  border-radius: 5px;
 }
 
 .buttons .daisybynamu:hover {
-    background-color: #9cbcaa;
+  background-color: #73867a;
 }
 
 .buttons .willowbynamu {
-    padding: 10px 20px;
-    margin: 5px;
-    border: none;
-    cursor: pointer;
-    background-color: #c96564;
-    color: white;
-    border-radius: 5px;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #b96966;
+  color: white;
+  border-radius: 5px;
 }
 
 .buttons .willowbynamu:hover {
-    background-color: #e17978;
+  background-color: #c77b78;
 }
 .gallery {
   display: flex;

@@ -48,14 +48,14 @@
   <nav class="navbar">
     <a href="#" class="navbar-logo averia-sans-libre-bold">Namu Kreativa</a>
 
-    <div class="navbar-nav montserratregular">
+    <div class="navbar-nav">
       <a href="#">Home</a>
       <a href="#about">Tentang Kami</a>
       <a href="#giftbynamu">GiftByNamu</a>
       <a href="#daisybynamu">DaisyByNamu</a>
       <a href="#willowbynamu">WillowByNamu</a>
       <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact Us</a>
+      <a href="#contact" class="contactnav">Contact Us</a>
     </div>
 
     <div class="navbar-extra">
@@ -68,7 +68,7 @@
   <section class="hero" id="home">
     <main class="content">
       <h1 class="rubik">Your Gifting Partner</h1>
-      <p class="montserratitalic">Bertamu dengan Hati, Berbagi dengan Namu</p>
+      <p class="montserratitalic">Bertamu dengan Hati,<br> Berbagi dengan Namu</p>
       <a href="#contact" class="cta">Contact Us</a>
 
     </main>
@@ -150,6 +150,9 @@
   <section id="daisybynamu" class="about">
     <h2><span style="color: #536459;" class="montserratbold">DaisyByNamu</span></h2>
     <div class="row">
+      <div class="about-img">
+        <img src="./assets/college/fotodaisy.png" alt="Tentang Kami" />
+      </div>
       <div class="content">
         <h3 class="montserratbold warnafont">Hampers & Souvenir for Kids or any Celebrations</h3>
         <p class="montserratregular warnafont">Daisy by Namu menghadirkan hadiah dan hampers kreatif yang dirancang
@@ -165,9 +168,6 @@
           target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
         <a class="icon" href="https://www.instagram.com/daisybynamu" target="_blank"><i
             class="fa-brands fa-instagram"></i></a>
-      </div>
-      <div class="about-img">
-        <img src="./assets/college/fotodaisy.png" alt="Tentang Kami" />
       </div>
     </div>
   </section>
@@ -202,9 +202,9 @@
   <!-- Gallery Start -->
   <section class="gallerynamu" style="text-align: center;" id="gallery">
     <div style="text-align: center; font-size: 1.5rem; margin-bottom: 3rem;">
-      <h2>Gallery <span style="color: #738f7f;">Namu</span>Kreativa</h2>
+      <h2>Gallery <span style="color: rgb(56, 56, 56);">Namu Kreativa</h2>
     </div>
-    <div class="buttons">
+    <div class="buttons montserratregular">
       <button onclick="filterSelection('all')" class="showall">Show All</button>
       <button onclick="filterSelection('GiftByNamu')" class="giftbynamu">GiftByNamu</button>
       <button onclick="filterSelection('DaisyByNamu')" class="daisybynamu">DaisyByNamu</button>
@@ -315,41 +315,35 @@
 
 
     </div>
-    <div class="section" style="cursor: pointer;  user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    -khtml-user-select:none;
-    -webkit-user-select:none">
+    <div class="section">
       <h2>Kontak Kami</h2>
+
       <div class="contact-box">
-        <i class="fa-solid fa-location-dot" id="icon"></i>
+        <i class="fa-solid fa-location-dot"></i>
         <span>&nbsp;Kembangan, Jakarta Barat</span>
       </div>
 
-      <div class="contact-boxli">
-        <i class="fa-brands fa-whatsapp" id="icon"></i>
-        <p>Admin Number</p>
+      <details class="contact-dropdown">
+        <summary>
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>&nbsp;Admin Number</span>
+        </summary>
         <ul>
-          <li>GiftByNamu: +62 877 90000 899</li>
-          <li>DaisyByNamu: +62 878 30398 899</li>
-          <li>WillowByNamu: +62 877 22853 888</li>
+          <li>GiftByNamu: <a href="https://wa.me/6287790000899">+62 877 90000 899</a></li>
+          <li>DaisyByNamu: <a href="https://wa.me/6287830398899">+62 878 30398 899</a></li>
+          <li>WillowByNamu: <a href="https://wa.me/6287722853888">+62 877 22853 888</a></li>
         </ul>
-      </div>
+      </details>
 
-      <a href="https://api.whatsapp.com/send?phone=6282280000787" style="color: black" target="_blank">
-        <div class="contact-box">
-          <i class="fa-brands fa-whatsapp" id="icon"></i>
-          <span>&nbsp;Collaborations and Partnership: +62 822 80000 787 </span>
-        </div>
+      <a href="https://api.whatsapp.com/send?phone=6282280000787" class="contact-box">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span>&nbsp;Collaborations and Partnership: +62 822 80000 787</span>
       </a>
 
-      <a href="mailto:namugifts@gmail.com" style="color: black; text-decoration: none;">
-        <div class="contact-box">
-          <i class="fa-solid fa-envelope" id="icon"></i>
-          &nbsp; namugifts@gmail.com
-        </div>
+      <a href="mailto:namugifts@gmail.com" class="contact-box">
+        <i class="fa-solid fa-envelope"></i>
+        <span>&nbsp;namugifts@gmail.com</span>
       </a>
-
     </div>
   </div>
   <!-- Contact Section End -->

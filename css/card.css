@@ -69,7 +69,7 @@
   /* Media query untuk responsivitas */
   @media (max-width: 768px) {
     .card {
-      flex: 1 1 100%; /* Card mengambil lebar penuh pada layar kecil */
+      flex: 1 1 30%; 
       max-width: 100%;
     }
   }

@@ -1,76 +1,74 @@
 .averia-sans-libre-light {
-  font-family: "Averia Sans Libre", sans-serif;
+  font-family: 'Averia Sans Libre', sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 
 .averia-sans-libre-regular {
-  font-family: "Averia Sans Libre", sans-serif;
+  font-family: 'Averia Sans Libre', sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .averia-sans-libre-bold {
-  font-family: "Averia Sans Libre", sans-serif;
+  font-family: 'Averia Sans Libre', sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
 .averia-sans-libre-light-italic {
-  font-family: "Averia Sans Libre", sans-serif;
+  font-family: 'Averia Sans Libre', sans-serif;
   font-weight: 300;
   font-style: italic;
 }
 
 .averia-sans-libre-regular-italic {
-  font-family: "Averia Sans Libre", sans-serif;
+  font-family: 'Averia Sans Libre', sans-serif;
   font-weight: 400;
   font-style: italic;
 }
 
 .averia-sans-libre-bold-italic {
-  font-family: "Averia Sans Libre", sans-serif;
+  font-family: 'Averia Sans Libre', sans-serif;
   font-weight: 700;
   font-style: italic;
 }
 
-
 .rubik {
-    font-family: "Rubik", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-  }
-
-  
-.montserratitalic {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: italic;
-  }
-
-.montserratbold {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
- }
-
-.montserratmedium {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  }
+}
+
+.montserratitalic {
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.montserratbold {
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.montserratmedium {
+  font-family: 'Montserrat', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 
 .montserratregular {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-optical-sizing: auto;
   font-weight: 460;
   font-style: normal;
-  }
+}
 
-  .warnafont{
-    color: #414042;
-  }
+.warnafont {
+  color: #414042;
+}
